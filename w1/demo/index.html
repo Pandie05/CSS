@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W1 | Demo</title>
+
+    <style>
+        .hide{
+            display: none;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div>
+
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+
+    </div>
+    <div id="1" class="section">Div 1</div>
+
+
+
+    <div id="2" class="section">Div 2</div>
+
+
+
+    <div id="3" class="section">Div 3</div>
+
+    <script>
+
+        var a = document.querySelectorAll(`a`)
+
+        var div = document.querySelectorAll(`.section`)
+        console.log(a)
+
+        for(var i=0; i<a.length; i++){
+
+            a[i].addEventListener(`click`, press)
+
+        }
+
+        function press(e){
+
+            e.preventDefault()
+
+            for(var i=0; i<a.lenght; i++){
+
+                div[i].classList.add(`hide`);
+
+            }
+
+            div[a.indexOf(e.target)].classList.remove(`hide`)
+
+        }
+
+    </script>
+    
+</body>
+</html>
