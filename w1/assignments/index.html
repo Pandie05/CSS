@@ -4,19 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hendry">
-    <meta name="description" content="W2 | Bio Page">
+    <meta name="description" content="W1 | Bio Page">
 
-    <title>W2 | Bio</title>
+    <title>W1 | Bio</title>
 
-    <!--
-        Name: Hendry
-        Section: SE111.1
-        Date: 1/21/2024
-    -->
-    
+    <style>
+
+        body {
+            background-color: rgb(102, 102, 96);
+        }
+
+        .all {
+            color: maroon;
+        }
+
+        .hide {
+            display: none;
+        }
+
+    </style>
+
 </head>
 
 <body>
+
+    <script>
+       
+        var a = Array.from(document.querySelectorAll(`a`));
+
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, hide)
+        }
+       
+        function hide(e)
+        {
+            e.preventDefault();
+
+            var div = document.querySelectorAll(`#bio`)
+           
+            for(let i=0; i<div.length; i++)
+            {
+                div[i].classList.add(`hide`);
+            }
+           
+            div[a.indexOf(e.target)].classList.remove(`hide`);
+        }
+
+   </script>
+
     <h1 id="header">Hendry Reyes</h1>
 
     <hr>
@@ -34,7 +70,7 @@
 
     <hr>
 
-    <div id="main">
+    <div id="main" class="all">
 
         <div id="bio">
             <!--Bio-->
@@ -43,13 +79,13 @@
             <p>--heres me and my friends on minecraft--</p>
             <img src="images/minecraft.png" alt="me and my friends on minecraft" style="width:500px;">
 
-            <p></p>
+            <p>Hello my name is Hendry, I really <b>HATE</b> the way you add comments in HTML. Anyways some of my favorite hobbies are Skating, Electric Guitar, Piano, and <i>hating</i> on the way you comment on html. Its too much work and my <u>fat coder fingers</u> have to move <strong>way too far</strong>. Although I know that ill get used to it and not hate it anymore its realy fun to <em>sh*t</em> on it for now. <i>(old se111 bio)</i></p>
     
-        </div><!--/ BIo-->
+        </div><!--/ Bio-->
     
         <hr>
     
-        <div id="ed">
+        <div id="ed" class="hide">
             <!--Schooling-->
     
             <h2>Schooling</h2>
@@ -64,7 +100,7 @@
     
         <hr>
     
-        <div id="hobbies">
+        <div id="hobbies" class="hide">
             <!--Hobbies-->
     
     
@@ -88,7 +124,7 @@
     <div id="footer">
 
         <a href="#header">Back To Top</a>
-        <p>&copy; 2024 | H REYES | SE111.1 [202420]</p>
+        <p>&copy; Hendry Reyes | W1 Assignment</p>
     </div>
 
     
