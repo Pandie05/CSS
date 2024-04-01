@@ -27,32 +27,6 @@
 </head>
 
 <body>
-
-    <script>
-       
-        var a = Array.from(document.querySelectorAll(`a`));
-
-        for(let i=0; i<a.length; i++)
-        {
-            a[i].addEventListener(`click`, hide)
-        }
-       
-        function hide(e)
-        {
-            e.preventDefault();
-
-            var div = document.querySelectorAll(`#bio`)
-           
-            for(let i=0; i<div.length; i++)
-            {
-                div[i].classList.add(`hide`);
-            }
-           
-            div[a.indexOf(e.target)].classList.remove(`hide`);
-        }
-
-   </script>
-
     <h1 id="header">Hendry Reyes</h1>
 
     <hr>
@@ -60,19 +34,19 @@
     <div id="nav">
         <!--Navigation-->
 
-        <a href="#bio">Bio</a>
-        <a href="#schooling">Schooling</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#footer">Footer</a>
+        <a href="#">Bio</a>
+        <a href="#">Schooling</a>
+        <a href="#">Hobbies</a>
+       
 
 
     </div><!--/ nav-->
 
     <hr>
 
-    <div id="main" class="all">
+    <div id="main">
 
-        <div id="bio">
+        <div id="bio" class="all">
             <!--Bio-->
             <h2>My Bio</h2>
     
@@ -85,7 +59,7 @@
     
         <hr>
     
-        <div id="ed" class="hide">
+        <div id="ed" class="hide all">
             <!--Schooling-->
     
             <h2>Schooling</h2>
@@ -100,7 +74,7 @@
     
         <hr>
     
-        <div id="hobbies" class="hide">
+        <div id="hobbies" class="hide all" >
             <!--Hobbies-->
     
     
@@ -127,6 +101,29 @@
         <p>&copy; Hendry Reyes | W1 Assignment</p>
     </div>
 
+    <script>
+       
+        var a = Array.from(document.querySelectorAll(`a`));
+
+        var div = document.querySelectorAll(`.all`)
+
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, hide)
+        }
+       
+        function hide(e)
+        {
+            e.preventDefault();
+           
+            for(let i=0; i<div.length; i++)
+            {
+                div[i].classList.add(`hide`);
+            }
+           
+            div[a.indexOf(e.target)].classList.remove(`hide`);
+        }
+   </script>
     
 </body>
 </html>
