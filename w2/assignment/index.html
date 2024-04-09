@@ -3,11 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W2 | Bio Page</title>
+    <meta name="author" content="Hendry">
+    <meta name="description" content="W1 | Bio Page">
+
+    <title>W2 | Bio</title>
+
+    <link rel="stylesheet" href="style.css">
+        
 </head>
+
 <body>
+    <h1 id="header">Hendry Reyes</h1>
+
+  
+
+    <div id="nav">
+        <!--Navigation-->
+
+        <a href="#">Bio</a>
+        <a href="#">Schooling</a>
+        <a href="#">Hobbies</a>
+       
+
+
+    </div><!--/ nav-->
 
     
+
+    <div id="main">
+
+        <div id="bio" class="all">
+            <!--Bio-->
+            <h2>My Bio</h2>
+    
+            <p>--heres me and my friends on minecraft--</p>
+            <img src="images/minecraft.png" alt="me and my friends on minecraft" style="width:500px;">
+
+            <p>Hello my name is Hendry, I really <b>HATE</b> the way you add comments in HTML. Anyways some of my favorite hobbies are Skating, Electric Guitar, Piano, and <i>hating</i> on the way you comment on html. Its too much work and my <u>fat coder fingers</u> have to move <strong>way too far</strong>. Although I know that ill get used to it and not hate it anymore its realy fun to <em>sh*t</em> on it for now. <i>(old se111 bio)</i></p>
+    
+        </div><!--/ Bio-->
+    
+        
+    
+        <div id="ed" class="hide all">
+            <!--Schooling-->
+    
+            <h2>Schooling</h2>
+    
+            <ul>
+                <li>Nathaneal Greene Middle School</li>
+                <li>Hope high School</li>
+                <li><a href="https://neit.edu" target="_blank">New England Institute of Technology</a></li>
+            </ul>
+    
+        </div><!--/ Schooling-->
+    
+       
+    
+        <div id="hobbies" class="hide all" >
+            <!--Hobbies-->
+    
+    
+            <h2>Hobbies</h2>
+    
+            <ol>
+                <li>Skating</li>
+                <li>Guitar</li>
+                <li>Piano</li>
+            </ol>
+            
+            <p>--my first ever ollie--</p>
+            <img src="images/ollie.gif" alt="my first ever ollie">
+
+          
+    
+        </div><!--/ Hobbies-->
+
+    </div><!--/ main-->
+
+    <div id="footer">
+
+        <a href="#header">Back To Top</a>
+        <p>&copy; Hendry Reyes | W1 Assignment</p>
+    </div>
+
+    <script>
+       
+        var a = Array.from(document.querySelectorAll(`a`));
+
+        var div = document.querySelectorAll(`.all`)
+
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, hide)
+        }
+       
+        function hide(e)
+        {
+            e.preventDefault();
+           
+            for(let i=0; i<div.length; i++)
+            {
+                div[i].classList.add(`hide`);
+            }
+           
+            div[a.indexOf(e.target)].classList.remove(`hide`);
+        }
+   </script>
     
 </body>
 </html>

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+
+body {
+
+    background: linear-gradient(to right, #808080, #A9A9A9);
+
+}
+
+.all {
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    border-bottom: 3px solid black;
+    font-family: 'Reddit Mono', monospace;
+}
+
+#nav {
+
+    text-align: center;
+    border-bottom: 3px solid black;
+    
+}
+
+p {
+    font-family: 'Reddit Mono', monospace;
+    font-size: 20px;
+}
+
+#main {
+    border-bottom: 3px solid black;
+}
+
+
+a:link, a:visited{
+    color: black;
+}
+
+a:hover, a:active{
+    color: white;
+}
+
+a {
+    display: inline-block;
+    padding:25px;
+    font-family: 'Reddit Mono', monospace;
+}
+
