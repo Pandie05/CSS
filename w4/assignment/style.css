@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+html {
+    height: 100%;
+}
+
+body{  
+    width: 1820px;
+    height: 1080px;
+    margin: 0;
+}
+
+header{
+    width: 1820px;
+    height: 100px;
+}
+
+main{
+    
+}
+
+#banner{;
+    width: 1440px;
+    height: 388px;
+}
+
+#leftmod {
+    width: 700px;
+    height: 481px;
+}
+
+#midmod {
+    width: 700px;
+    height: 481px;
+}
+
+#rightmod {
+   
+    width: 360px;
+    height: 918px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid black;
+}
