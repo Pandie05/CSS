@@ -5,28 +5,30 @@ html {
 }
 
 body{  
-    width: 1820px;
-    height: 1080px;
+    height: 100%;
     margin: 0;
-}
-
-header{
-    width: 1820px;
-    height: 100px;
 }
 
 main{
     
-    outline: 1px solid black;  
-
 }
 
+header{
+    
+    width: 1820px;
+    height: 100px;
+}
+
+
+
 #banner{
+    display: flex;
     width: 1440px;
     height: 388px;
 }
 
 #banner img{
+
     width: 1440px;
     height: 388px;
 }
@@ -38,19 +40,26 @@ main{
 }
 
 #midmod {
+
     width: 700px;
     height: 481px;
 }
 
 #rightmod {
-   
     width: 360px;
     height: 918px;
 }
 
 .content{
-    display: flex;
-    flex-direction: column;
-    outline: 1px solid black;
     background-color: grey;
+}
+
+footer{
+    width: 1820px;
+    height:60px;
+    background-color: #0254A0;
+}
+
+.container{
+    display: flex;
 }
