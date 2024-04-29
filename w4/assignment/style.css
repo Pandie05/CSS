@@ -17,9 +17,16 @@ header{
 
 main{
     
+    outline: 1px solid black;  
+
 }
 
-#banner{;
+#banner{
+    width: 1440px;
+    height: 388px;
+}
+
+#banner img{
     width: 1440px;
     height: 388px;
 }
@@ -27,6 +34,7 @@ main{
 #leftmod {
     width: 700px;
     height: 481px;
+    
 }
 
 #midmod {
@@ -44,4 +52,5 @@ main{
     display: flex;
     flex-direction: column;
     outline: 1px solid black;
+    background-color: grey;
 }
