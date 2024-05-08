@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+html {
+
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    background: rgb(40, 40, 40);
+}
+
+main {
+    width: 1820px;
+    height: 1080px;
+    outline: 1px solid black;
+   
+}
+
+header{
+    background: rgb(7, 7, 7);
+    margin: 0;
+    width: 1820px;
+    height: 100px;
+}
+
+#banner{
+    width: 1440px;
+    height: 388px;
+    outline: 1px solid black;
+}
+
+#leftmod{
+    display: inline-block;
+    width: 700px;
+    height: 481px;
+    background: rgb(57, 57, 57);
+    margin: 24px 20px 24px 20px;
+}
+
+#midmod{
+    display: inline-block;
+    width: 700px;
+    height: 481px;
+    background: rgb(57, 57, 57);
+    margin: 23px 20px 25px 0;
+}
+
+#rightmod{
+    width: 360px;
+    height: 918px;
+    background: rgb(57, 57, 57);
+
+}
+
+content{
+    
+}
+
+footer{
+    width: 1820px;
+    height: 60px;
+    background: rgb(7, 7, 7);
+}
+
