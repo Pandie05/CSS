@@ -31,6 +31,14 @@ aside{
     width: 45px;
 }
 
+aside button{
+    width: 45px;
+    height: 45px;
+    background-color: #505050;
+    color: white;
+    border: 0;
+}
+
 #tray{
     min-width: 144px;
     background-color: #7b7575;
@@ -44,7 +52,7 @@ aside{
 div.tray div{
     min-width: 144px;
     box-sizing: border-box;
-    border: 5px solid cyan;
+    
 }
 
 #program{
