@@ -20,28 +20,18 @@ header{
     height:23px;
     background-color:#505050;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    color:white;
+}
+
+header div{
+    font-size: 12px;
 }
 
 header h1{
-    display: flex;
     font-size: 12px;
-    color:white;
-    max-width: 106px;
-    margin-left: 45%;
-}
-
-.FEH{
-    display:flex;
-    color:white;
-    font-size: 12px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.FEH:first-child{
-    margin-left: 5%;
-}   
+} 
 
 section{
     background-color:lime;
@@ -50,8 +40,107 @@ section{
 }
 
 aside{
+    height: 100%;
     background-color:#505050;
     width:45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+aside div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside button{
+    width:45px;
+    height:45px;
+    background-color: transparent;
+    border:0;
+
+}
+
+aside i{
+    font-size: x-large;
+    color:white;
+   
+}
+
+aside i:last-child{
+    margin-bottom: 15px;
+}
+
+#tray_cont{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.files{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.files ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.files li i{
+    color:white;
+    padding-right: 5px;
+}
+
+.files li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+summary{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.stuff{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stuff ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.stuff li i{
+    color:white;
+    padding-right: 5px;
+}
+
+.stuff li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#first_stuff{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c2c2c2;
+    border-top: 1px solid #c2c2c2;
 }
 
 .tray{
@@ -64,6 +153,17 @@ aside{
     justify-content: flex-end;
     overflow: hidden;
    
+}
+
+.tray summary:hover{
+    color: #c2c2c2;
+}
+
+.tray button{
+    width:144px;
+    background-color:#7b7575;
+    color:white;
+    border:0;
 }
 
 div.tray div{
@@ -89,14 +189,19 @@ nav{
     display:flex;
 }
 
-button{
+nav button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width:173px;
     background-color:#c2c2c2;
     border-radius: 0;
     border:0 solid #161616;
     margin-right:2px;
-    
+    color: white;
 }
+
+
 
 button.active{
     background-color:#161616;
@@ -127,5 +232,10 @@ textarea{
 footer{
     height:16px;
     background-color:#0254A0;
+    display:flex;
+    justify-content: space-between;
+    color: white;
 }
+
+
 
