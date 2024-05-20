@@ -5,20 +5,22 @@ html{
 }
 
 body{
-    height:100%;
+    height: 100%;
     margin:0;
 }
 
+main{
+    height: 100%;
+}
+
+/* -----------------Columns----------------- */
+#cols{
+    height: 97%;
+}
+
+/* -------First Column------- */
 #firstcol{
-    height: 95%;
-}
-
-#secondcol{
-    height: 95%;
-}
-
-footer{
-    height: 3%;
+    height: 100%;
 }
 
 header{
@@ -28,4 +30,23 @@ header{
 
 aside{
     height: 60%;
+}
+/* ----------------------------------------------- */
+
+/* -------Second Column------- */
+#secondcol{
+    height: 100%;
+}
+
+nav{
+    height: 4%;
+}
+
+section{
+    height: 96%;
+}
+/* ------------------------------------------------ */
+
+footer{
+    height: 3%;
 }
