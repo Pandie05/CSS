@@ -40,10 +40,12 @@ aside{
 
 nav{
     height: 4%;
+    min-height: 35px;
 }
 
 section{
-    height: 96%;
+    height: 95%;
+    min-height: 380px;
 }
 /* ------------------------------------------------ */
 
