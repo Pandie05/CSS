@@ -27,6 +27,9 @@ header{
     height: 40%;
 }
 
+header h1{
+    font-size: 2em;
+}
 
 aside{
     height: 60%;
